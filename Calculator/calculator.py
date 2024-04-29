@@ -1,5 +1,5 @@
 # app.py
-# This is a test commits
+# This is a test commit
 class Calculator:
     def add(self, a, b):
         return a + b
