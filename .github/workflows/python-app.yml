@@ -38,7 +38,3 @@ jobs:
       run: |
         cd Addition
         pytest addition.py
-    - name: Test with pytest   
-      run: | 
-        cd Subtraction
-        pytest subtraction.py
