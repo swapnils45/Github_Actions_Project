@@ -1,8 +1,24 @@
 # app.py
 # This is a test commit
-def add(a, b):
-    return a + b
+class Calculator:
+    def add(self, a, b):
+        return a + b
 
-def test_add():
-    assert add(1, 2) == 3
-    assert add(1, -1) == 0
+    def sub(self, a, b):
+        return a - b
+
+    def test_add(self):
+        assert self.add(1, 2) == 3
+        assert self.add(1, -1) == 0
+
+    def test_sub(self):
+        assert self.sub(3, 2) == 1
+        assert self.sub(2, 1) == 1
+
+# Instantiate the Calculator class
+calc = Calculator()
+
+# Test the methods
+calc.test_add()
+calc.test_sub()
+
